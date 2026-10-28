@@ -16,7 +16,8 @@ return new class extends Migration
             $table->string('nombre', 100); 
             $table->string('codigo')->unique(); 
             $table->string('facultad'); 
-            $table->integer('duracion_semestres'); 
+            $table->integer('duracion_semestres');
+            $table->timestamps(); 
         });
     }
     /**
